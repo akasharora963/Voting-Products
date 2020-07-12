@@ -9,7 +9,7 @@ class VoterDetails extends Component{
   state = {
     products : [],
     accounts : '',
-    pageSize : 5,
+    pageSize : 5 //default parameter to load page
   }
 
   async componentDidMount(){
@@ -18,6 +18,7 @@ class VoterDetails extends Component{
     this.getPage(0);
   }
 
+  //Auxillary function load page
   async getPage(page) {
     if(page < 0) return;
     this.setState({productCount: await rating.methods.productCount().call()});
@@ -30,10 +31,10 @@ class VoterDetails extends Component{
       limit = this.state.productCount;
    }
 
-   let products = [];
+   let products = []; //set products array
    this.setState({products});
    for(let i = skip; i < limit; i++) {
-     let p = await rating.methods.getProduct(i).call({from: this.state.accounts[0]});
+     let p = await rating.methods.getProduct(i).call({from: this.state.accounts[0]}); // get details of product
      products.push(p);
      this.setState({products});
    }
@@ -41,33 +42,31 @@ class VoterDetails extends Component{
    console.log('products', this.state.products);
  }
 
+//frontend to load details  page
   render(){
     return (
       <div>
         <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" />
         <Segment raised ='true'>
-          <div style={{ backgroundColor : 'violet'}}>
+          <div style={{ backgroundColor : 'lightblue'}}>
             <Link route ='/'>
-              <Button color='purple' ><Icon name="home"/></Button>
+              <Button color='violet' ><Icon name="home"/>Go to Homes page</Button>
             </Link>
             <Link route ='/products/show'>
               <Button color='red'><Icon name="fighter jet"/>Go to Products page</Button>
             </Link>
             <h3> Voters Info : </h3>
             <ul className="list-group">
-              {this.state.products.length ? null : <h2>No info available</h2>}
+              {this.state.products.length ? null : <h2>No info available</h2>} //condition when there is no product
               {this.state.products.map(p =>
                   <div>
-                    {p.pvoters.length ?
+                    {p.pvoters.length ?  //condition when there is no voters
                     <li className="list-group-item" key={p.id}>
-                      <Header size='medium'>Product  : {p.title}</Header>
+                      <Header size='medium'>Product  : {p.title}</Header> //product name
                       <Segment inverted compact='true'>
-                        <p>{p.pvoters[0]}</p>
-                        <p>{p.pvoters[1]}</p>
-                        <p>{p.pvoters[2]}</p>
-                        <p>{p.pvoters[3]}</p>
-                        <p>{p.pvoters[4]}</p>
-                        <p>{p.pvoters[5]}</p>
+                        {p.pvoters.map(arr=>( //mapping is done to read elements of voters array
+                          <p>{arr}</p> //Voter details
+                        ))}
                       </Segment>
                       <Divider section/>
                     </li> : null}

@@ -7,6 +7,6 @@ const {createServer} = require('http')
 app.prepare().then(() => {
   createServer(handler).listen(3000,err=>{
     if(err) throw err;
-    console.log("Ready to host...on port 3000");
+    console.log("Ready to host...on port 3000");//indication of starting of server on local host
   });
 });
