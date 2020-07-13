@@ -61,3 +61,17 @@ $ npm run dev
 ```
 #### Preview
 ![image](https://user-images.githubusercontent.com/45670997/87298711-41b58400-c528-11ea-8b69-c93edcbcb233.png)
+***
+At the start
+### Home page
+![image](https://user-images.githubusercontent.com/45670997/87299133-12ebdd80-c529-11ea-8577-742553f79184.png)
+
+### Products Page
+![image](https://user-images.githubusercontent.com/45670997/87301132-a7a40a80-c52c-11ea-9a5e-d73e199e73ff.png)
+
+###  Voter Details Page
+![image](https://user-images.githubusercontent.com/45670997/87301187-bd193480-c52c-11ea-9b18-d4c6d3814e7e.png)
+
+
+
+
