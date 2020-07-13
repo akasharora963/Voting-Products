@@ -24,7 +24,7 @@ $ npm install solc@0.4.17
 $ npm install web3
 $ npm install @truffle/hdwallet-provider
 $ npm install ganache-cli
-$ npm install mpcha
+$ npm install mocha
 ```
 #### User interface side Packages
 ```sh
@@ -34,3 +34,8 @@ $ npm install react react-dom
 $ npm install semantic-ui-react
 $ npm install semantic-ui-css
 ```
+To run test :
+```sh
+$ npm run test
+```
+#### Preview
