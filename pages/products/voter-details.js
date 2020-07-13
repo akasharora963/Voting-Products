@@ -50,10 +50,10 @@ class VoterDetails extends Component{
         <Segment raised ='true'>
           <div style={{ backgroundColor : 'lightblue'}}>
             <Link route ='/'>
-              <Button color='violet' ><Icon name="home"/>Go to Homes page</Button>
+              <Button inverted color='facebook' ><Icon name="home"/>Go to Homes page</Button>
             </Link>
             <Link route ='/products/show'>
-              <Button color='red'><Icon name="fighter jet"/>Go to Products page</Button>
+              <Button inverted color='google plus'><Icon name="fighter jet"/>Go to Products page</Button>
             </Link>
             <h3> Voters Info : </h3>
             <ul className="list-group">

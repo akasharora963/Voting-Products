@@ -68,7 +68,7 @@ class ProductShow extends Component{
         <Segment raised ='true'>
           <div style={{ backgroundColor : 'lightblue'}}>
             <Link route ='/'>
-              <Button color='violet'><Icon name="home"/>Go to Homes page</Button> //to go home page
+              <Button inverted color='facebook'><Icon name="home"/>Go to Homes page</Button> //to go home page
             </Link>
             <h3> Products Info : </h3>
             <h5>Total Product Count  : {this.state.productCount}</h5>
