@@ -71,6 +71,25 @@ At the start
 
 ###  Voter Details Page
 ![image](https://user-images.githubusercontent.com/45670997/87301187-bd193480-c52c-11ea-9b18-d4c6d3814e7e.png)
+***
+#### Adding product
+![image](https://user-images.githubusercontent.com/45670997/87301983-28173b00-c52e-11ea-8314-f60f5b998939.png)
+
+#### Products Page Status
+![image](https://user-images.githubusercontent.com/45670997/87302222-9e1ba200-c52e-11ea-94e2-2b301643e583.png)
+
+### Voting product
+![image](https://user-images.githubusercontent.com/45670997/87302375-e76bf180-c52e-11ea-8220-e8ded20f596b.png)
+![image](https://user-images.githubusercontent.com/45670997/87302546-32860480-c52f-11ea-9439-759c23fa7293.png)
+![image](https://user-images.githubusercontent.com/45670997/87302610-53e6f080-c52f-11ea-8ff1-31be7f93c58e.png)
+![image](https://user-images.githubusercontent.com/45670997/87302641-682aed80-c52f-11ea-92a0-660c8f3c06d4.png)
+
+### Voter Details
+![image](https://user-images.githubusercontent.com/45670997/87302718-8a247000-c52f-11ea-8aff-18737e12fb80.png)
+
+Thank you!!
+
+
 
 
 
